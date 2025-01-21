@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="css/myprofile.css" />
+  <script src="script/change-page.js"></script>
+  <script src="script/myprofile.js"></script>
+</head>
+<body>
+<div class="menu">
+  <ul>
+    <li class="nav-item">
+      <button class="icon-button home-icon" aria-label="Home" id="homeButton"></button> <!-- Ensure the button has the ID "homeButton" -->
+      <a href="home1.html" class="nav-link" id="homeLink" >Home</a>
+      <button class="icon-button basket-icon" aria-label="Basket"></button>
+      <button class="icon-button user-icon" aria-label="User"></button>
+    </li>
+  </ul>
+</div>
+<br/>
+
+<center>
+  <img class="img" src="png/profile.png" alt="profile" />
+</center>
+<br/>
+
+<div class="menu2">
+  <ul>
+    <li><span  class="link-text" id="myprofileLink">โปรไฟล์ของฉัน</span></li>
+    <a href="NowBorrow.html" class="link-text" id="ฺNowBorrowLink" >กำลังยืม</a>
+    <a href="history.html" class="link-text" id="historyLink" >ประวัติการยืม</a>
+  </ul>
+</div>
+<div class="grid-container">
+  <!-- กลุ่ม "ชื่อ" -->
+  <div class="grid-item">
+    <p class="text">ชื่อ :</p>
+    <span id="nameInput" class="box"></span>
+  </div>
+
+  <!-- กลุ่ม "นามสกุล" -->
+  <div class="grid-item">
+    <p class="text">นามสกุล :</p>
+    <span id="surnameInput" class="box"></span>
+  </div>
+
+  <!-- กลุ่ม "ID" -->
+  <div class="grid-item">
+    <p class="text">Username :</p>
+    <span id="idInput" class="box"></span>
+  </div>
+
+  <!-- กลุ่ม "Password" -->
+  <div class="grid-item">
+    <p class="text">Password :</p>
+    <span id="passwordInput" class="box"></span>
+  </div>
+
+  <!-- กลุ่ม "คณะ" -->
+  <div class="grid-item">
+    <p class="text">คณะ :</p>
+    <span id="facultyInput" class="box"></span>
+  </div>
+
+
+  <!-- กลุ่ม "สถานะ" -->
+  <div class="grid-item">
+    <p class="text">สถานะ :</p>
+    <span id="statusInput" class="box"></span>
+  </div>
+
+</div>
+</body>
+</html>

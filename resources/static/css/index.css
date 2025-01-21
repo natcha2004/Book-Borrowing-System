@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Bedmi-Puri;
+    src: url("../fonts/Bedmi-Puri.ttf");
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Mitr-Regular;
+    src: url("../fonts/Mitr-Regular.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0;
+    background-color: #fdf3d7;
+    font-family: Bedmi-Puri, sans-serif;
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.square {
+    width: 600px;
+    height: 400px;
+    background-color: #E8C9C9;
+    border: 10px solid #954422;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.square p {
+    margin-top: 80px;
+    text-align: center;
+    margin: 0;
+    font-size: 42px;
+    font-family: Mitr-Regular;
+    font-weight : Bold;
+    margin-top: 40px;
+    color: #8B0C0C;
+}
+
+.username{
+width: 300px;
+    height: 40px;
+    background-color: #FDF7E7;
+    border: 2px solid #954422;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password {
+    width: 300px;
+    height: 40px;
+    background-color: #FDF7E7;
+    border: 2px solid #954422;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username input,
+.password input {
+    width: 70%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: Mitr-Regular;
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.username p,
+.password p {
+    font-size: 13px;
+    font-family: Inter-Regular, sans-serif;
+    margin-top: 0px;
+    margin-left: 7px;
+    margin-right: auto;
+    opacity: 0.5;
+    color: #954422;
+}
+
+.loginbut {
+    width: 80px;
+    height: 35px;
+    background-color: #A09D9D;
+    border: 2px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginbut button {
+    width: 120px;
+    height: 40px;
+    background-color: #A95C68;
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-family: Mitr-Regular;
+    font-weight: Bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginbut button:hover {
+    background-color: #811331;
+}
+
+.message {
+    font-family: Bedmi-Puri, sans-serif;
+    font-size: 14px;
+    color: #FF0000; /* Adjusted color */
+    text-align: center;
+    margin-top: 15px;
+}
+
+.video-container {
+    width: 40%;
+    position: relative;
+    margin-top: 180px;
+    margin-left: 10px;
+    justify-content: flex-end; /* Align video to the right edge */
+    align-items: center;
+}
+
+.video-container video {
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    height: 70%; /* Occupy full height of container */
+    max-width: 100%; /* Ensure video does not exceed container width */
+    object-fit: cover;
+}

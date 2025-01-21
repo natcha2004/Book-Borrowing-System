@@ -1,0 +1,43 @@
+<!-- home3.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="css/search.css">
+    <script src="script/change-page.js"></script>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li class="nav-item">
+            <button class="icon-button home-icon" aria-label="Home" id="homeButton"></button> <!-- Ensure the button has the ID "homeButton" -->
+            <a href="#" class="nav-link" id="homeLink" >Home</a>
+            <form action="/book/{search}" method="GET" id="searchForm" class="search-form">
+                <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาหนังสือ">
+                <input type="submit" value="ค้นหา" class="search-button">
+            </form>
+            <button class="icon-button basket-icon" aria-label="Basket"></button>
+            <button class="icon-button user-icon" aria-label="User"></button>
+        </li>
+    </ul>
+</div>
+<div id="searchResults">
+    <div class="image-box">
+        <img src="" alt="book-image1" class="image">
+        <div class="caption">
+            <p class="Bname">พระมหาสมปองฉบับรักนะคนดี</p>
+            <p class="Author">สำนักพิมพ์: Think Beyond</p>
+            <p class="status">not available</p>
+            <p class="rating">4.0</p>
+        </div>
+    </div>
+</div>
+
+<script src="script/search.js"></script>
+<script src="script/search-result.js"></script>
+
+</body>
+</html>

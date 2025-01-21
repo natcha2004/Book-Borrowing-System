@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Mitr-Regular;
+    src: url("../fonts/Mitr-Regular.ttf");
+}
+
+body {
+  margin: 0; /* ให้ขอบชิด */
+  padding: 0; /* ให้ขอบชิด */
+  font-family: Inter-SemiBold, sans-serif;
+  background-color: #fdf7e7;
+}
+
+.menu {
+  background-color: #482e1d;
+  height: 50px;
+  width: 100%; /* Change width to 100% to fit within viewport */
+  max-width: 100%; /* Limit the width to viewport width */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fdf7e7;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+/* ใส่รูปภาพของปุ่ม home */
+.home-icon {
+  width: 28px; /* ขนาดของรูปภาพ */
+  height: 28px;
+  background-image: url("../png/home.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none; /* ลบเส้นขอบของปุ่ม */
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.font {
+  color: #fdf7e7;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.search-form {
+  margin: 0 auto;
+}
+
+.search-input {
+    font-family: Mitr-Regular;
+  padding: 8px;
+  border-radius: 5px;
+  width: 350px;
+  border: 1.5px solid rgb(55, 50, 15);
+}
+
+.search-button {
+  font-family: Mitr-Regular;
+  padding: 8px 16px;
+  background-color: #795328;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+        .text_heading {
+            font-family: Mitr-Regular;
+                color: #472f17;
+                font-size: 44px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                text-align: center;
+        }
+
+        /* Table */
+        .box {
+            width: 90%;
+            margin: 20px auto; /* Added margin */
+            border-collapse: collapse;
+            border-radius: 15px; /* Adjust the value to change the roundness */
+            overflow: hidden;
+        }
+
+        .header-cell {
+            font-weight: bold;
+            background-color: #795328;
+            color: #ffffff;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .table-body tr{
+            background-color: #ffffff;
+        }
+
+        .table-body td {
+            padding: 8px;
+        }
+
+        .table-body tr.highlighted-row {
+            background-color: #ffffcc; /* Light yellow */
+        }
+
+
+        .table-body tr:hover {
+            background-color: #e5e5e5;
+        }
+
+        .cell {
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* Style the button inside the center-aligned cells */
+        .header-cell.center button {
+            margin: auto; /* Center horizontally */
+            display: block; /* Align vertically */
+            margin: 0 auto; /* Center horizontally */
+            transform: translateY(-50%); /* Center vertically */
+        }
+
+        .centered-cell {
+                text-align: center;
+                vertical-align: middle; /* Center vertically */
+        }
+
+        .centered-header {
+                text-align: center;
+        }
+
+
+

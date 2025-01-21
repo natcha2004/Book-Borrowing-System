@@ -1,0 +1,284 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Mitr-Regular;
+    src: url("../fonts/Mitr-Regular.ttf");
+}
+
+body {
+    margin: 0; /* ให้ขอบชิด */
+    padding: 0; /* ให้ขอบชิด */
+    font-family: Inter-SemiBold, sans-serif;
+    background-color: #fdf7e7;
+}
+.menu {
+  background-color: #482e1d;
+  height: 50px;
+  width: 100%; /* Change width to 100% to fit within viewport */
+  max-width: 100%; /* Limit the width to viewport width */
+}
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  line-height: 50px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fdf7e7;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+/* ใส่รูปภาพของปุ่ม home */
+.home-icon {
+  width: 28px; /* ขนาดของรูปภาพ */
+  height: 28px;
+  background-image: url("../png/home.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none; /* ลบเส้นขอบของปุ่ม */
+  cursor: pointer;
+  background-color: transparent;
+}
+.nav-link-2 {
+    text-decoration: none;
+    color: #fdf7e7;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* ใส่รูปภาพของปุ่ม Basket */
+.basket-icon {
+    width: 28px; /* ขนาดของปุ่ม */
+    height: 28px;
+    background-image: url('../png/basket.png'); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain; /* ปรับขนาดรูปภาพให้พอดีกับขนาดของปุ่ม */
+    background-position: center; /* กำหนดให้ภาพอยู่ตรงกลางของปุ่ม */
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent; /* กำหนดพื้นหลังเป็นโปร่งใส */
+    margin-right: 10px;
+  }
+
+
+/* ใส่รูปภาพของปุ่ม User */
+.user-icon {
+  width: 35px; /* ขนาดของปุ่ม */
+  height: 35px; /* ใช้ความสูงอัตโนมัติ */
+  background-image: url("../png/user.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+  background-size: contain; /* ปรับขนาดรูปภาพให้พอดีกับขนาดของปุ่ม */
+  background-position: center; /* กำหนดให้ภาพอยู่ตรงกลางของปุ่ม */
+  background-repeat: no-repeat;
+  border: none; /* ลบเส้นขอบของปุ่ม */
+  cursor: pointer;
+  background-color: transparent; /* กำหนดพื้นหลังเป็นโปร่งใส */
+  margin: end;
+  margin-left: 10px;
+}
+.centered {
+  text-align: center;
+}
+.font {
+  color: #fdf7e7;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+.search-form {
+    margin: 0 auto;
+}
+.search-input {
+    font-family: Mitr-Regular;
+    padding: 8px;
+    border-radius: 5px;
+    width: 350px;
+    border: 1.5px solid rgb(55, 50, 15);
+}
+.search-button {
+    font-family: Mitr-Regular;
+    padding: 8px 16px;
+    background-color: #795328;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.add-to-cart-button {
+  font-family: Mitr-Regular;
+  padding: 8px 16px;
+  background-color: #156c2a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.cancel-button {
+  font-family: Mitr-Regular;
+  padding: 8px 16px;
+  background-color: #b20606;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-button{
+    font-family: Mitr-Regular;
+    padding: 8px 16px;
+      background-color: #156c2a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button{
+    font-family: Mitr-Regular;
+    padding: 8px 16px;
+      background-color: #b20606;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book {
+    display: flex;
+    align-items: center; /* Align items to the center of the flex container */
+    justify-content: center; /* Align content to the center horizontally */
+    margin-top: 120px;
+}
+
+.book-image {
+    width: 300px;
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    max-height: 400px; /* Limit maximum height to prevent image from stretching */
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure entire image is visible without cropping */
+}
+
+.Description {
+    max-width: 700px; /* Set maximum width for the frame */
+    background-color: #fff; /* Background color for book details */
+    margin-top: 5px; /* Adjust margin-top to bring it closer to the top */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    text-align: left; /* Align text to the left */
+}
+
+.Description h2 {
+    font-size: 24px;
+    margin: 0; /* Reset margin to remove any additional space */
+    margin-bottom: 10px;
+}
+
+.Description p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+/* Button styles */
+.add-to-cart-button,
+.cancel-button {
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-button {
+    background-color: #156c2a;
+}
+
+.cancel-button {
+    background-color: #b20606;
+}
+
+/* Initially hide the modal */
+#deleteConfirmationModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Adjust the width as needed */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-buttons button {
+  margin: 5px;
+}
+
+#confirmDelete {
+  font-family: Mitr-Regular;
+    padding: 8px 16px;
+    background-color: #156c2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cancelDelete {
+  font-family: Mitr-Regular;
+      padding: 8px 16px;
+        background-color: #b20606;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+

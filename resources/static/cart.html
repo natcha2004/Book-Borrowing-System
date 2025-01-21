@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <script src="script/change-page.js"></script>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li class="nav-item">
+            <button class="icon-button home-icon" aria-label="Home" id="homeButton"></button> <!-- Ensure the button has the ID "homeButton" -->
+            <a href="#" class="nav-link" id="homeLink" >Home</a>
+            <form action="/book/{search}" method="GET" id="searchForm" class="search-form">
+                <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาหนังสือ">
+                <input type="submit" value="ค้นหา" class="search-button">
+            </form>
+            <button class="icon-button basket-icon" aria-label="Basket"></button>
+            <button class="icon-button user-icon" aria-label="User"></button>
+        </li>
+    </ul>
+</div>
+
+<div class="cart-container">
+    <h1>Cart</h1>
+    <div class="cart-items">
+
+    </div>
+    <button class="send-button">Send</button>
+</div>
+
+<script src="script/search.js"></script>
+<script src="script/show-cart.js"></script>
+</body>
+</html>

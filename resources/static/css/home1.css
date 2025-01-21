@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Bedmi-Puri;
+    src: url("../fonts/Bedmi-Puri.ttf");
+}
+
+@font-face {
+    font-family: Mitr-Regular;
+    src: url("../fonts/Mitr-Regular.ttf");
+}
+
+body {
+  margin: 0; /* ให้ขอบชิด */
+  padding: 0; /* ให้ขอบชิด */
+  font-family: Inter-SemiBold, sans-serif;
+  background-color: #fdf7e7;
+}
+.menu {
+  background-color: #482e1d;
+  height: 50px;
+  width: 100%; /* Change width to 100% to fit within viewport */
+  max-width: 100%; /* Limit the width to viewport width */
+}
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  line-height: 50px;
+}
+.search-input {
+  font-family: Mitr-Regular;
+  padding: 8px;
+  border-radius: 5px;
+  width: 350px;
+  border: 1.5px solid rgb(55, 50, 15);
+  margin: 0 auto;
+}
+.search-button {
+    font-family: Mitr-Regular;
+    padding: 8px 16px;
+    background-color: #90591c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+.centered {
+  text-align: center;
+}
+.nav-link {
+    text-decoration: none;
+    color: #fdf7e7;
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+.box {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #cdbeb1;
+  border-style: dotted;
+  margin: 45px;
+  height: 620px;
+}
+.text-box {
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+  background-color: #7c644f;
+  border-style: solid;
+  padding: 20px;
+  margin-top: 25px;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 25px; /* ปรับ `padding-top` เป็นค่าที่ต้องการ */
+  margin-bottom: 25px;
+}
+.font {
+    font-family: Mitr-Regular;
+  color: #fdf7e7;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* ใส่รูปภาพของปุ่ม home */
+.home-icon {
+    width: 28px; /* ขนาดของรูปภาพ */
+    height: 28px;
+    background-image: url("../png/home.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+.nav-link-2 {
+    text-decoration: none;
+    color: #fdf7e7;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* ใส่รูปภาพของปุ่ม Basket */
+.basket-icon {
+    width: 28px; /* ขนาดของปุ่ม */
+    height: 28px;
+    background-image: url('../png/basket.png'); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain; /* ปรับขนาดรูปภาพให้พอดีกับขนาดของปุ่ม */
+    background-position: center; /* กำหนดให้ภาพอยู่ตรงกลางของปุ่ม */
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent; /* กำหนดพื้นหลังเป็นโปร่งใส */
+    margin-right: 10px;
+  }
+
+  /* ใส่รูปภาพของปุ่ม User */
+  .user-icon {
+    width: 35px; /* ขนาดของปุ่ม */
+    height: 35px; /* ใช้ความสูงอัตโนมัติ */
+    background-image: url('../png/user.png'); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain; /* ปรับขนาดรูปภาพให้พอดีกับขนาดของปุ่ม */
+    background-position: center; /* กำหนดให้ภาพอยู่ตรงกลางของปุ่ม */
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent; /* กำหนดพื้นหลังเป็นโปร่งใส */
+    text-align: end;
+  }
+
+  /* ปรับความกว้างของคอนเทนเนอร์ */
+  #bestbookList {
+      display: flex;
+      flex-wrap: wrap; /* แสดงเล่มหนังสือในแนวนอนและข้อมูลในแนวตั้ง */
+      justify-content: flex-start; /* จัดให้อยู่กึ่งกลางตามแนวนอน */
+      gap: 115px; /* ระยะห่างระหว่างเล่มหนังสือ */
+      max-width: 90%; /* กำหนดความกว้างสูงสุดของ bestbookList */
+      margin: 0 auto; /* จัดกลาง bestbookList ในคอนเทนเนอร์ */
+  }
+
+  /* ปรับขนาดของรายการหนังสือแต่ละเล่ม */
+  #bestbookList > div {
+      flex: 0 0 calc(25% - 20px); /* ขนาดของเล่มหนังสือให้เป็น */
+      display: flex;
+      flex-direction: column; /* แสดงข้อมูลในรูปแบบคอลัมน์ */
+      align-items: center; /* จัดให้อยู่กึ่งกลางตามแนวดิ่ง */
+      text-align: center; /* จัดข้อความให้อยู่กึ่งกลางตามแนวนอน */
+      border: 1px solid #000;
+      border-radius: 10px;
+      background-color: #bea998;
+      padding: 20px;
+  }
+
+  #bestbookList > div img {
+      margin-right: 20px; /* ระยะห่างระหว่างรูปภาพกับข้อความ */
+  }
+
+  #bestbookList > div h2,
+  #bestbookList > div p {
+      display: block; /* แสดงเป็นบล็อก (block element) */
+      margin: 5px 0; /* ระยะห่างด้านบนและด้านล่างของข้อความ */
+  }
+
+  #bestbookList > div {
+      cursor: pointer; /* Change cursor to hand icon */
+  }
+
+  #allbookList > div {
+        cursor: pointer; /* Change cursor to hand icon */
+    }
+
+  #allbookList {
+      display: flex;
+      flex-wrap: wrap; /* Display books in a row and details in a column */
+      justify-content: center; /* Center items horizontally */
+      gap: 50px; /* Space between book items */
+  }
+
+  /* Adjust the size and style of each book item */
+  #allbookList > div {
+      flex: 0 0 calc(25% - 25px); /* Set the size of each book */
+      display: flex;
+      flex-direction: column; /* Display details in a column */
+      align-items: center; /* Center items vertically */
+      text-align: center; /* Center text horizontally */
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 20px;
+
+  }
+
+  /* Add space between image and text */
+  #allbookList > div img {
+      margin-right: 20px; /* Space between image and text */
+  }
+
+  /* Style the heading and paragraph elements */
+  #allbookList > div h2,
+  #allbookList > div p {
+      display: block; /* Display as block elements */
+      margin: 5px 0; /* Set margin */
+  }
+
+  #bestbookList > div p,
+    #allbookList > div p {
+        font-family: Inter-SemiBold, sans-serif;
+        font-weight: 300;
+    }
+
+  .status-frame {
+      border: 1px solid black; /* Add border */
+      padding: 5px; /* Add padding */
+      border-radius: 5px; /* Add border radius for rounded corners */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

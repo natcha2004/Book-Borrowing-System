@@ -1,0 +1,42 @@
+<!-- home3.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="css/search-admin.css">
+
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li class="nav-item">
+            <button class="icon-button home-icon" aria-label="Home" id="homeButton-admin"></button>
+            <a href="admin.html" class="nav-link" id="homeLink-admin" >Home</a>
+            <form action="/book/{search}" method="GET" id="searchForm" class="search-form">
+                <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาหนังสือ">
+                <input type="submit" value="ค้นหา" class="search-button">
+            </form>
+        </li>
+    </ul>
+</div>
+
+<div id="searchResults-admin">
+    <div class="image-box">
+        <img src="" alt="book-image1" class="image">
+        <div class="caption">
+            <p class="Bname">พระมหาสมปองฉบับรักนะคนดี</p>
+            <p class="Author">สำนักพิมพ์: Think Beyond</p>
+            <p class="status">not available</p>
+            <p class="rating">4.0</p>
+        </div>
+    </div>
+</div>
+
+<script src="script/admin-search.js"></script>
+<script src="script/admin-search-result.js"></script>
+
+</body>
+</html>

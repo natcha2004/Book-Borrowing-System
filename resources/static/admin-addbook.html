@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new book</title>
+    <link rel="stylesheet" href="css/admin-addbook.css" />
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li class="nav-item">
+            <button class="icon-button home-icon" aria-label="Home"></button>
+            <a href="admin.html" class="nav-link">Home</a>
+            <form id="searchForm" action="/book/{search}" method="GET" class="search-form">
+                <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาหนังสือ">
+                <input type="submit" value="ค้นหา" class="search-button">
+            </form>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p class="text_heading">เพิ่มหนังสือในระบบ</p>
+</div>
+<center>
+    <div class="frame">
+        <div class="details">
+            <div class="bookID">
+                <p class="text">รหัสหนังสือ :</p>
+                <input id="bookIDInput" type="text"  />
+            </div>
+            <div class="bookName">
+                <p class="text">ชื่อหนังสือ :</p>
+                <input id="bookNameInput" type="text"/>
+            </div>
+            <div class="bookAuthor">
+                <p class="text">ชื่อผู้แต่ง :</p>
+                <input id="bookAuthorInput" type="text" />
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="bookCategory">
+                <p class="text">หมวดหมู่หนังสือ :</p>
+                <input id="bookCategoryInput" type="text" />
+            </div>
+            <div class="bookStatus">
+                <p class="text">สถานะหนังสือ :</p>
+                <select id="bookStatusInput">
+                    <option value="" disabled selected></option>
+                    <option value="available" >available</option>
+                    <option value="notavailable">not available</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="bookDescription">
+                <p class="text">เรื่องย่อหนังสือ :</p>
+                <input id="bookDescriptionInput" type="text" />
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="bookOverallRating">
+                <p class="text">เรตติ้งหนังสือ :</p>
+                <input id="bookOverallRatingInput" type="text" />
+            </div>
+            <div class="bookImage">
+                <p class="text">url รูปภาพ :</p>
+                <input id="bookImageInput" type="text" />
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="button">
+                <button id="confirmButton" class="confirm-button">ยืนยัน</button>
+            </div>
+        </div>
+        <script src="script/admin-addbook.js"></script>
+    </div>
+
+</center>
+
+<script src="script/admin-search.js"></script>
+</body>
+</html>

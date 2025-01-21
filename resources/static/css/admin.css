@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Mitr-Regular;
+    src: url("../fonts/Mitr-Regular.ttf");
+}
+
+body {
+    margin: 0; /* ให้ขอบชิด */
+    padding: 0; /* ให้ขอบชิด */
+    font-family: Inter-SemiBold, sans-serif;
+    background-color: #fdf7e7;
+}
+
+.menu {
+    background-color: #482e1d;
+    height: 50px;
+    width: 100%; /* Change width to 100% to fit within viewport */
+    max-width: 100%; /* Limit the width to viewport width */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fdf7e7;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+  /* ใส่รูปภาพของปุ่ม home */
+.home-icon {
+    width: 28px; /* ขนาดของรูปภาพ */
+    height: 28px;
+    background-image: url("../png/home.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent;
+    align-items: center;
+}
+
+.book-icon {
+    width: 150px; /* ขนาดของรูปภาพ */
+    height: 150px;
+    background-image: url("../png/book.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.addbook-icon {
+    width: 120px; /* ขนาดของรูปภาพ */
+    height: 120px;
+    background-image: url("../png/addbook.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.request-icon {
+    width: 130px; /* ขนาดของรูปภาพ */
+    height: 130px;
+    background-image: url("../png/request.png"); /* ลิงก์ไปยังไฟล์รูปภาพ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    cursor: pointer;
+    background-color: transparent;
+}
+.font {
+    color: #fdf7e7;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.search-form {
+    margin: 0 auto;
+}
+
+.search-input {
+    font-family: Mitr-Regular;
+    padding: 8px;
+    border-radius: 5px;
+    width: 350px;
+    border: 1.5px solid rgb(55, 50, 15);
+}
+
+.search-button {
+    font-family: Mitr-Regular;
+    padding: 8px 16px;
+    background-color: #795328;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.nav-link-2 {
+    text-decoration: none;
+    color: #fdf7e7;
+}
+
+.text_admin {
+    font-family: Inter-SemiBold, sans-serif;
+    color: #472f17;
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 4px; /* Adjust the letter spacing as needed */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 0px; /* Adjust the gap as per your requirement */
+  margin-top: 80px;
+}
+
+.function {
+    position: relative; /* Make the container relative for absolute positioning */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #d4c6bb;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgba(163, 150, 106, 1);
+    border-radius: 150px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.function p.text {
+    margin-top: 20px; /* Adjust the distance between button and text */
+}
+
+
+.text {
+    font-size: 22px;
+    font-family: Mitr-Regular;
+}
+
+.allBook {
+    font-size: 28px;
+    text-decoration: none; /* ลบเส้นใต้ข้อความ */
+    color: #FDF7E7; /* กำหนดสีข้อความ */
+}
+
+.requestItem {
+    font-size: 28px;
+    text-decoration: none;
+    color: #FDF7E7;
+}
+
+.penaltyList {
+    font-size: 28px;
+    text-decoration: none;
+    color: #FDF7E7;
+}
+
+

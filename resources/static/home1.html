@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/home1.css">
+    <script src="script/change-page.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="nav-item">
+                <button class="icon-button home-icon" aria-label="Home" id="homeButton"></button> <!-- Ensure the button has the ID "homeButton" -->
+                <a href="#" class="nav-link" id="homeLink" >Home</a>
+                <a href="index.html" class="nav-link-2">Logout</a>
+                <button class="icon-button basket-icon" aria-label="Basket"></button>
+                <button class="icon-button user-icon" aria-label="User"></button>
+            </li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div class="centered">
+        <form id="searchForm" action="/book/{search}" method="GET">
+            <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาหนังสือ">
+            <input type="submit" value="ค้นหา" class="search-button">
+        </form>
+
+    </div>
+
+    <div class="box">
+        <div class="text-box">
+            <div class="font"> หนังสือยอดฮิตประจำสัปดาห์</div>
+        </div>
+        <div id="bestbookList"></div>
+        <script src="script/home1-bestbook.js"></script>
+    </div>
+
+    <div id="allbookList"></div>
+    <script src="script/home1-allbook.js"></script>
+
+    <script src="script/search.js"></script>
+
+
+</body>
+</html>

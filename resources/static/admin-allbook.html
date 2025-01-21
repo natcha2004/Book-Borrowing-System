@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Lists of Book for Admin</title>
+  <link rel="stylesheet" href="css/admin-allbook.css" />
+</head>
+<body>
+<div class="menu">
+  <ul>
+    <li class="nav-item">
+      <button class="icon-button home-icon" aria-label="Home"></button>
+      <a href="admin.html" class="nav-link">Home</a>
+      <form id="searchForm" action="/book/{search}" method="GET" class="search-form">
+        <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาหนังสือ">
+        <input type="submit" value="ค้นหา" class="search-button">
+      </form>
+    </li>
+  </ul>
+</div>
+<div class="content">
+  <div id="allbook"></div>
+  <script src="script/admin-allbook.js"></script>
+</div>
+<script src="script/admin-search.js"></script>
+</body>
+</html>

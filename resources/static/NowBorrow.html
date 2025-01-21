@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Borrowing</title>
+  <link rel="stylesheet" href="css/history.css" />
+  <script src="script/change-page.js"></script>
+  <script src="script/NowBorrow.js"></script>
+</head>
+<body>
+<div class="menu">
+  <ul>
+    <li class="nav-item">
+      <button class="icon-button home-icon" aria-label="Home" id="homeButton"></button> <!-- Ensure the button has the ID "homeButton" -->
+      <a href="home1.html" class="nav-link" id="homeLink" >Home</a>
+      <button class="icon-button basket-icon" aria-label="Basket"></button>
+      <button class="icon-button user-icon" aria-label="User"></button>
+    </li>
+  </ul>
+</div>
+<br/>
+<center>
+  <img class="img" src="png/profile.png" alt="profile" />
+</center>
+<br/>
+
+<div class="menu2">
+  <ul>
+    <a href="myprofile.html" class="link-text" id="myprofileLink">โปรไฟล์ของฉัน</a>
+    <li><span class="link-text">กำลังยืม</span></li>
+    <a href="history.html" class="link-text" id="historyLink" >ประวัติการยืม</a>
+  </ul>
+</div>
+
+<center>
+  <table class="box">
+    <thead>
+    <tr>
+      <th class="header-cell">BID</th>
+      <th class="header-cell">Book Name</th>
+      <th class="header-cell center">Borrow Date</th> <!-- Updated column name -->
+      <th class="header-cell center">Return Date</th> <!-- Updated column name -->
+    </tr>
+    </thead>
+    <tbody class="table-body"> <!-- This is where table rows will be inserted -->
+    <!-- Data will be dynamically inserted here -->
+    </tbody>
+  </table>
+</center>
+
+</body>
+</html>

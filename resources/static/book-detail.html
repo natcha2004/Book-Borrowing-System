@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+    <link rel="stylesheet" href="css/book-detail.css" />
+    <script src="script/change-page.js"></script>
+
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li class="nav-item">
+            <button class="icon-button home-icon" aria-label="Home" id="homeButton"></button>
+            <a href="#" class="nav-link" id="homeLink" >Home</a>
+            <form action="/book/{search}" method="GET" id="searchForm" class="search-form">
+                <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาหนังสือ">
+                <input type="submit" value="ค้นหา" class="search-button">
+            </form>
+
+            <button class="icon-button basket-icon" aria-label="Basket"></button>
+            <button class="icon-button user-icon" aria-label="User"></button>
+        </li>
+    </ul>
+</div>
+<div class="book">
+    <script src="script/book-detail.js"></script>
+    <div class="book-image">
+        <img src="" alt="Book Image">
+    </div>
+
+    <div class="Description">
+        <br><br><br>
+        <h2>Title of the Book</h2>
+        <p>ID: BID</p>
+        <p>Author: Author Name</p>
+        <p>Category: Book Genre</p>
+        <p>Description: Description of the book goes here...</p>
+        <p>Status: status</p>
+        <form class="Rate"> Rate : <span class="overall-rating"></span></form>
+        <div class="button-container">
+            <button class="add-to-cart-button">Add to cart</button>
+            <button class="cancel-button">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="script/search.js"></script>
+<script src="script/cart.js"></script>
+<script src="script/cancel.js"></script>
+</body>
+</html>
